@@ -259,7 +259,7 @@ abstract class PhabricatorFileImageTransform extends PhabricatorFileTransform {
 
     $file = $this->file;
 
-    $max_size = (1024 * 1024 * 4);
+    $max_size = (1024 * 1024 * 8);
     $img_size = $file->getByteSize();
     if ($img_size > $max_size) {
       throw new Exception(
